@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About S.H Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Playfair+Display:wght@500&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --gold: #FFD700;
+            --black: #000000;
+            --bg: #000000;
+            --text: #FFD700;
+            --card-bg: rgba(0, 0, 0, 0.8);
+        }
+
+        [data-theme="light"] {
+            --bg: #ffffff;
+            --text: #000000;
+            --card-bg: rgba(255, 255, 255, 0.9);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel Decorative', cursive;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: var(--text);
+        }
+
+        .theme-toggle, .language-toggle {
+            position: fixed;
+            right: 20px;
+            padding: 10px;
+            border-radius: 50%;
+            background: var(--text);
+            color: var(--bg);
+            cursor: pointer;
+            border: 2px solid var(--gold);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .theme-toggle {
+            top: 20px;
+        }
+
+        .language-toggle {
+            top: 80px;
+            width: 40px;
+            height: 40px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--text);
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--gold);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: linear-gradient(45deg, var(--black), var(--gold));
+            color: var(--text);
+            border-radius: 10px;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    <button class="language-toggle" onclick="toggleLanguage()">EN</button>
+
+    <div class="container">
+        <h1 data-lang="en">About S.H Art</h1>
+        <h2 data-lang="fr">À propos de S.H Art</h2>
+        <h2 data-lang="ar">S.H Art حول </h2>
+
+        <p data-lang="en">I am Houche Saïd, a self-taught artist whose passion for drawing has blossomed into a lifelong journey of creativity and expression. Art is not just a hobby for me—it’s a way of life. Specializing in crayon art, I find joy in transforming blank canvases into vivid, textured masterpieces that capture the soul of my subjects. My work is deeply inspired by the beauty of people and nature, reflecting the emotions, stories, and cultural richness that define our world. Through my art, I strive to connect with others, share my vision, and celebrate the universal language of creativity.</p>
+        <p data-lang="fr">Je suis Houche Saïd, un artiste autodidacte dont la passion pour le dessin s'est transformée en un voyage de créativité et d'expression. L'art n'est pas seulement un passe-temps pour moi, c'est un mode de vie. Spécialisé dans l'art au crayon, je trouve de la joie à transformer des toiles vierges en des chefs-d'œuvre vivants et texturés qui capturent l'âme de mes sujets. Mon travail est profondément inspiré par la beauté des gens et de la nature, reflétant les émotions, les histoires et la richesse culturelle qui définissent notre monde. À travers mon art, je m'efforce de me connecter avec les autres, de partager ma vision et de célébrer le langage universel de la créativité.</p>
+        <p data-lang="ar">أنا هوش سعيد، فنان تحول شغفي بالرسم إلى رحلة إبداعية وتعبيرية طويلة الأمد. الفن بالنسبة لي ليس مجرد هواية، بل هو أسلوب حياة. أتخصص في فن الرسم بالطباشير، وأجد متعة في تحويل اللوحات الفارغة إلى تحف نابضة بالحياة تعكس روح مواضيعي. يستلهم عملي بشكل كبير من جمال الناس والطبيعة، ويعكس المشاعر والحكايات والثراء الثقافي الذي يحدد عالمنا. من خلال فني، أسعى للتواصل مع الآخرين، ومشاركة رؤيتي، والاحتفاء باللغة العالمية للإبداع.</p>
+
+        <!-- Repeat for other sections (Welcome, Vision, Values, Audience, Future) -->
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61557417475097" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://youtube.com/@houche.said" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <footer>
+        <p data-lang="en">&copy; 2025 S.H Art. All rights reserved.</p>
+        <p data-lang="fr">&copy; 2025 S.H Art. Tous droits réservés.</p>
+        <p data-lang="ar">&copy; 2025 S.H Art. جميع الحقوق محفوظة.</p>
+        <p>Contact: <a href="mailto:S.H_art@outlook.com">S.H_art@outlook.com</a> | Phone: <a href="tel:+213783339471">+213783339471</a></p>
+    </footer>
+
+    <script>
+        // Theme Toggle
+        function toggleTheme() {
+            document.body.setAttribute('data-theme',
+                document.body.getAttribute('data-theme') === 'light' ? 'dark' : 'light'
+            );
+            localStorage.setItem('theme', document.body.getAttribute('data-theme'));
+        }
+
+        // Language Toggle
+        let currentLanguage = 'en';
+        const languages = ['en', 'fr', 'ar'];
+
+        function toggleLanguage() {
+            currentLanguage = languages[(languages.indexOf(currentLanguage) + 1) % languages.length];
+            document.querySelector('.language-toggle').textContent = currentLanguage.toUpperCase();
+            updateLanguage(currentLanguage);
+        }
+
+        function updateLanguage(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
+            });
+        }
+
+        // Load saved theme and language
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.body.setAttribute('data-theme', savedTheme);
+
+        const savedLanguage = localStorage.getItem('language') || 'en';
+        currentLanguage = savedLanguage;
+        document.querySelector('.language-toggle').textContent = currentLanguage.toUpperCase();
+        updateLanguage(currentLanguage);
+    </script>
+</body>
+</html>
